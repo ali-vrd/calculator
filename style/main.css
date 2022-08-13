@@ -1,0 +1,159 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: sans-serif;
+}
+
+.elements {
+  background-color: #343434;
+  box-shadow: 50px 30px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  width: 350px;
+  height: 620px;
+  border-radius: 10px;
+}
+
+.circles {
+  display: flex;
+  justify-content: space-around;
+  width: 350px;
+}
+
+.circle {
+  border-radius: 100%;
+  border: 1px solid white;
+  box-shadow: inset 0px 0px 0px 3px white;
+  margin: 20px;
+  background-color: yellow;
+  width: 13px;
+  height: 13px;
+}
+
+.circle1 {
+  background-color: yellow;
+}
+
+.giving-data {
+  width: 320px;
+  height: 100px;
+  border: none;
+  border-radius: 20px;
+  margin-top: 50px;
+  margin-left: 13px;
+  background-image: -webkit-linear-gradient(left, lightgreen, #fadcd9);
+}
+
+.result {
+  font-size: 29px;
+  margin-left: 20px;
+}
+
+.row1 {
+  width: 350px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.row2 {
+  width: 350px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.row3 {
+  width: 350px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.row4 {
+  width: 350px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn {
+  background-image: -webkit-linear-gradient(top, lightblue, #fadcd9);
+  padding: 20px;
+  border-radius: 50%;
+  margin-top: 30px;
+  border: 2px;
+  font-size: 20px;
+}
+
+.btn:hover {
+  background-image: -webkit-linear-gradient(top, yellow, #fadcd9);
+  cursor: pointer;
+}
+
+.operator {
+  background-image: -webkit-linear-gradient(top, aqua, #fadcd9);
+}
+
+.operator:hover {
+  background-image: -webkit-linear-gradient(top, lightgreen, #fadcd9);
+  cursor: pointer;
+}
+
+.del-all {
+  background-image: -webkit-linear-gradient(top, chartreuse, #fadcd9);
+}
+
+.del-all:hover {
+  background-image: -webkit-linear-gradient(top, gray, #fadcd9);
+}
+
+.alivrd {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.txt {
+  text-decoration: none;
+  display: block;
+  width: 200px;
+  height: 40px;
+  background: -webkit-linear-gradient(left, lightgreen, white);
+  text-align: center;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: verdana;
+  color: black;
+  position: relative;
+  margin-left: 53px;
+  margin-top: 70px;
+  margin-bottom: 30px;
+  border-radius: 9px;
+  padding: 7px 20px 7px 20px;
+  border: solid 5px;
+}
+
+.txt span {
+  position: relative;
+  z-index: 1;
+}
+
+.txt:before {
+  background: green;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  animation: progress 3s linear infinite;
+}
+
+@keyframes progress {
+  to {
+    width: 100%;
+  }
+}
