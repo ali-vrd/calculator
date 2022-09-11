@@ -2,5 +2,5 @@
  
  This is just a calculator. :)
  
-## Demo: 
+## Demo
 [caculator](https://calculator-ali.netlify.app/)
